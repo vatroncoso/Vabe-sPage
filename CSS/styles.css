@@ -2,12 +2,15 @@
     background-color: rgba(242,245,247,255);
 }
 
+#presentation{
+    height: 1000px;
+    background-color: rgba(242,245,247,255);
+}
 
-h1{
-    font-size: 60px;
-    color:rgba(0, 0, 0, 0.877);
-    font-family: 'Roboto', sans-serif;
-    vertical-align: baseline;
+#carouselPresentation{
+    position:absolute;
+    width: 100% ;
+    left: 8%;
 }
 
 /* Nav bar*/
@@ -24,56 +27,88 @@ h1{
     color: black;
 }
 
+/* Nav-bar items hover*/
+ul a:hover{
+    color: #000000 !important;
+  }
+  nav li{
+      text-align: center;
+      text-transform: uppercase;
+  }
+  li > a:after{
+      content: '';
+      display: block;
+      height: 1.5px;
+      background: #000000;
+      transform: scaleX(0);
+      transition: transform .3s;
+  }
+  li > a:hover:after{
+      transform: scaleX(1);
+      transition: transform .3s;
+  }
+  .active{
+      color: #000000 !important;
+  }
 
+/*Presentation part*/
 
-/*Corousel*/
+    /*Corousel*/
 
-.carousel-item{
-    height: 32rem;
-    background-color: rgba(242,245,247,255);
-    position: relative;
-}
+    .carousel-item{
+        height: 32rem;
+        position: relative;
+    }
 
-.container-pre{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding-bottom: 50px;
-    padding-left:120px ;
+    .carousel-inner{
+        height: 900px;
+    
+    }
 
-}
+    /*.container-pre{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding-bottom: 10px;
+        padding-left:120px ;
+        
+        
+    }
+    */
+    .carousel-indicators li {
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        color: #000000;
+    }
+
+    .carousel1Left{
+        position: relative;
+        font-size: 65px;
+        color:rgba(0, 0, 0, 0.782);
+        font-family: 'Roboto', sans-serif;
+        top: 350px;
+        padding-right: 50%;
+    }
+    
+    .carousel1Right{
+        padding-left: 150px;
+    }
+
+    .carousel2Left{
+        position: relative;
+        font-family: 'Roboto', sans-serif;
+        top: 350px;
+        color:rgba(0, 0, 0, 0.782);
+    }
 
 /*Imagenes*/
 .Vabefoto{
-    width: 80%;
+    
+    width: 65%;
     border-radius: 10%;
     position: relative;
+    margin-top: 80px;
 }
 
-
-
-
-/* Nav-bar items hover*/
-ul a:hover{
-  color: #000000 !important;
-}
-nav li{
-    text-align: center;
-    text-transform: uppercase;
-}
-li > a:after{
-    content: '';
-    display: block;
-    height: 1.5px;
-    background: #000000;
-    transform: scaleX(0);
-    transition: transform .3s;
-}
-li > a:hover:after{
-    transform: scaleX(1);
-    transition: transform .3s;
-}
-.active{
-    color: #000000 !important;
-}

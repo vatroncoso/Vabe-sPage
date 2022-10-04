@@ -26,7 +26,6 @@
 
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
     <script src="./myScript.js"></script>
 
     <title>Valentina Troncoso G. </title>
@@ -62,43 +61,56 @@
     </section>
 
     <!--Presentation carousel-->
+
     <section id="presentation">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-            </ol>
+
+        <div id="carouselPresentation" class="carousel slide" data-ride="carousel">
+           
             <div class="carousel-inner">
+                <!--First slide-->
                 <div class="carousel-item active">
-                        <div class="container-pre">
-                            <h1>Hi, my name is Valentina Troncoso</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                        <div class="row">
+                            <div class="col-lg-6 carousel1Left ">
+                                Hi, I´m Valentina, a Junior Web Development
+                              
+                            </div>
+                            <div class="col-lg-6 carousel1Right">
+                                <img  class="Vabefoto" src="Images/vabe.jpeg" alt="Valentina-Troncoso">
+                            </div>
+                        </div>
+                </div>
+
+                <!--Second Slide-->
+                <div class="carousel-item">
+                    <div class="container-pre">
+                        <div class="row">
+                            <div class="col-lg-6 carousel2Left">
+                                <h1>Please give a job :)</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
                                 Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, 
                                 ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, 
-                                aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. </p>
-                                <a href="#" class="btn btn-lg btn-prim"> Contact me</a>
-
-
-                        </div>
-                </div>
-
-                <div class="carousel-item">
-                        <div class="container-pre">
-                            <h1>Please give a job :)</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, 
-                                    ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, 
-                                    aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+                                aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
                                 </p>
-                                <a href="#" class="btn btn-lg btn-prim"> Contact me</a>
-
-
+                            </div>
                         </div>
+                    </div>
                 </div>
+            
+                    <!--Botones-->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselPresentation" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselPresentation" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
             </div>
-        </div>
+    
     </section>
 
+    
+  
   <!--Popper and Bootstrap JS -->
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
