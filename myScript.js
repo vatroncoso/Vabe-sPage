@@ -9,3 +9,4 @@ for (var i = 0; i < numClass; i++) {
 			this.className += ' active';
     }, false);
 	}
+
