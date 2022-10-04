@@ -1,0 +1,72 @@
+#title{
+    background-color: rgba(242,245,247,255);
+}
+
+#carousel{
+    background-color: rgba(242,245,247,255);
+}
+
+
+h1{
+    font-size: 65px;
+    color:rgba(0, 0, 0, 0.877);
+    font-family: 'Roboto', sans-serif;
+    vertical-align: baseline;
+}
+.navbar {
+    padding-top: 3rem;  
+    margin-left: 110px;
+    font-size: 22px;
+}
+
+.bg-light {
+    --bs-bg-opacity: 0;
+    
+}
+
+
+.Vabefoto{
+    width: 80%;
+    border-radius: 10%;
+    position: relative;
+
+    
+}
+
+.carouseltext{
+    font-size: 65px;
+    color:rgba(0, 0, 0, 0.877);
+    font-family: 'Roboto', sans-serif;
+    vertical-align: text-bottom;
+}
+
+.nav-item{
+    padding-right: 0.6cm;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+
+/* Nav-bar items hover*/
+ul a:hover{
+  color: #000000 !important;
+}
+nav li{
+    text-align: center;
+    text-transform: uppercase;
+}
+li > a:after{
+    content: '';
+    display: block;
+    height: 1.5px;
+    background: #000000;
+    transform: scaleX(0);
+    transition: transform .3s;
+}
+li > a:hover:after{
+    transform: scaleX(1);
+    transition: transform .3s;
+}
+.active{
+    color: #000000 !important;
+}
