@@ -3,15 +3,44 @@
 }
 
 #presentation{
-    height: 1000px;
+    height: 900px;
     background-color: rgba(242,245,247,255);
+    position: relative;
 }
 
 #carouselPresentation{
     position:absolute;
     width: 100% ;
     left: 8%;
+    
 }
+
+#background{
+    margin: 10%;
+}
+
+
+
+#footer{
+    text-align: center;
+    background-color: rgba(242,245,247,255);
+    padding: 1%;
+}
+
+h2{
+
+    text-transform: uppercase;
+    font-size: 8px;
+}
+
+h4{
+    text-transform: uppercase;
+}
+
+ul {
+    list-style-type: none;
+}
+
 
 /* Nav bar*/
 .navbar {
@@ -103,6 +132,20 @@ ul a:hover{
         color:rgba(0, 0, 0, 0.782);
     }
 
+
+/*Background*/
+
+    .skills{
+        padding-left: 120px;
+    }
+
+
+/*Education*/
+.container-educ{
+    margin: 10%;
+    width: 150%;
+    background-color: rgba(242,245,247,255);
+}
 /*Imagenes*/
 .Vabefoto{
     
@@ -112,3 +155,4 @@ ul a:hover{
     margin-top: 80px;
 }
 
+/* Footer*/
