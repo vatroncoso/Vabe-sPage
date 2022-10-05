@@ -202,6 +202,7 @@ ul a:hover{
 .brands{
     padding: 1%;
 }
+
 .fa-brands{
     padding: 20px;
     font-size: 60px;
@@ -211,7 +212,6 @@ ul a:hover{
 }
 
 .fa-brands:hover{
- 
     transition-duration: 0.2s; /* Animation */
     transform: rotate(25deg);   
     cursor: pointer;
