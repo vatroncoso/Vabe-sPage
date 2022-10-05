@@ -29,11 +29,21 @@
     background-color: rgba(242,245,247,255);
 }
 
+#contact{
+    font-family: 'Roboto', sans-serif;
+    padding-left: 7%;
+
+}
+
 h2{
 
     text-transform: uppercase;
     font-size: 8px;
     padding: 1em;
+}
+
+h3{
+    color: #5e548e;
 }
 
 h4{
@@ -45,7 +55,7 @@ ul {
     list-style-type: none;
 }
 
-/*Imagenes*/
+/*Images*/
 .Vabefoto{
     
     width: 80%;
@@ -56,39 +66,39 @@ ul {
 }
 
 /*Buttons*/
-    .btn.btn-secondary{
-        padding: 12px 16px;
-        border-color: #5e548e;
-        background-color: #5e548e;
-        color: #fff
-    }
+.btn.btn-secondary{
+    padding: 12px 16px;
+    border-color: #5e548e;
+    background-color: #5e548e;
+    color: #fff
+}
 
-    .btn.btn-round{
-        border-radius: 5px;
-    }
+.btn.btn-round{
+    border-radius: 5px;
+}
 
-    /*Scroll_to_top*/
-    #myBtn {
-        /*display: none;*/
-        position: fixed; /* Fixed/sticky position */
-        bottom: 20px; /* Place the button at the bottom of the page */
-        right: 30px; /* Place the button 30px from the right */
-        z-index: 99; /* Make sure it does not overlap */
-        border: none; /* Remove borders */
-        outline: none; /* Remove outline */; 
-        color: #5e548e; /* Text color */
-        background-color: rgba(242,245,247,255);
-        cursor: pointer; /* Add a mouse pointer on hover */
-        padding: 15px; /* Some padding */
-        border-radius: 10px; /* Rounded corners */
-        font-size: 18px; /* Increase font size */
-        border-radius: 200px;
-      }
-      
-      #myBtn:hover {
-        color: #555; /* Add a dark-grey background on hover */
-        background-color: gainsboro;
-      }
+/*Scroll_to_top*/
+#myBtn {
+    /*display: none;*/
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */; 
+    color: #5e548e; /* Text color */
+    background-color: rgba(242,245,247,255);
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    border-radius: 200px;
+    }
+    
+    #myBtn:hover {
+    color: #555; /* Add a dark-grey background on hover */
+    background-color: gainsboro;
+    }
 
 /* Nav bar*/
 .navbar {
@@ -106,79 +116,67 @@ ul {
 
 /* Nav-bar items hover*/
 ul a:hover{
+color: #000000 !important;
+}
+nav li{
+    text-align: center;
+    text-transform: uppercase;
+}
+li > a:after{
+    content: '';
+    display: block;
+    height: 1.5px;
+    background: #000000;
+    transform: scaleX(0);
+    transition-duration: 0.2s; /* Animation */
+}
+li > a:hover:after{
+    transform: scaleX(1);
+    transition-duration: 0.2s; /* Animation */
+}
+.active{
     color: #000000 !important;
-  }
-  nav li{
-      text-align: center;
-      text-transform: uppercase;
-  }
-  li > a:after{
-      content: '';
-      display: block;
-      height: 1.5px;
-      background: #000000;
-      transform: scaleX(0);
-      transition-duration: 0.2s; /* Animation */
-  }
-  li > a:hover:after{
-      transform: scaleX(1);
-      transition-duration: 0.2s; /* Animation */
-  }
-  .active{
-      color: #000000 !important;
-  }
+}
 
 /*Presentation part*/
 
-    /*Corousel*/
+/*Corousel*/
 
-    .carousel-inner{
-        height: 900px;
-        padding-left: 10%;
-        padding-right: 10%;
+.carousel-inner{
+    height: 900px;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+.carousel1Left{
+    position: relative;
+    padding-top: 20%;
+    padding-right: 20%;
+    font-size: 65px;
+    color:rgba(0, 0, 0, 0.782);
+    font-family: 'Roboto', sans-serif;
     
-    }
-
-    /*.container-pre{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        padding-bottom: 10px;
-        padding-left:120px ;
-        
-        
-    }
-    */
-
-
-    .carousel1Left{
-        position: relative;
-        padding-top: 20%;
-        padding-right: 20%;
-        font-size: 65px;
-        color:rgba(0, 0, 0, 0.782);
-        font-family: 'Roboto', sans-serif;
-        
-    }
+}
     
-    .carousel1Right{
-        padding-left: 150px;
-    }
+.carousel1Right{
+    padding-left: 150px;
+}
 
-    .carousel2Left{
-        position: relative;
-        padding-left:10% ;
-        font-family: 'Roboto', sans-serif;
-        top: 350px;
-        color:rgba(0, 0, 0, 0.782);
-    }
+.carousel2Left{
+    position: relative;
+    margin-left: 50px;
+    padding-right: 20%;
+    font-family: 'Roboto', sans-serif;
+    top: 350px;
+    color:rgba(0, 0, 0, 0.782);
+}
     
 /*Background*/
 
-    .skills{
-        padding-left: 120px;
-    }
+.skills{
+    padding-left: 120px;
+}
 
 
 /*Education*/
@@ -229,3 +227,18 @@ ul a:hover{
     padding-top: 20px;
 
 }
+
+/*Contact me*/
+.form-group{
+    padding-bottom: 15px;
+}
+
+.label{
+    padding-bottom: 5px;
+}
+
+.form-control{
+    color: gray;
+    background-color: #555;
+}
+/*Floating menu*/
