@@ -202,15 +202,16 @@ ul a:hover{
 .brands{
     padding: 1%;
 }
+
 .fa-brands{
     padding: 20px;
     font-size: 60px;
     color: #fff;
     transform: scale(0.8);
+    transition: transform 0.2s linear;
 }
 
 .fa-brands:hover{
- 
     transition-duration: 0.2s; /* Animation */
     transform: rotate(25deg);   
     cursor: pointer;
