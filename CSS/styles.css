@@ -3,44 +3,92 @@
 }
 
 #presentation{
-    height: 900px;
+    
     background-color: rgba(242,245,247,255);
-    position: relative;
-}
-
-#carouselPresentation{
-    position:absolute;
-    width: 100% ;
-    left: 8%;
+    height: 900px;
     
 }
 
-#background{
-    margin: 10%;
+#carouselPresentation{
+    background-color: rgba(242,245,247,255);
 }
 
-
+#background{
+    padding: 10%;
+    position: relative;
+}
 
 #footer{
     text-align: center;
-    background-color: rgba(242,245,247,255);
+    background-color: #5e548e;
+    color: #fff;
     padding: 1%;
+}
+
+#education{
+    background-color: rgba(242,245,247,255);
 }
 
 h2{
 
     text-transform: uppercase;
     font-size: 8px;
+    padding: 1em;
 }
 
 h4{
     text-transform: uppercase;
+    color: #5e548e;
 }
 
 ul {
     list-style-type: none;
 }
 
+/*Imagenes*/
+.Vabefoto{
+    
+    width: 80%;
+    border-radius: 10%;
+    position: relative;
+    margin-top: 15%;
+    margin-left: 20%;
+}
+
+/*Buttons*/
+    .btn.btn-secondary{
+        padding: 12px 16px;
+        border-color: #5e548e;
+        background-color: #5e548e;
+        color: #fff
+    }
+
+    .btn.btn-round{
+        border-radius: 5px;
+    }
+
+    /*Scroll_to_top*/
+    #myBtn {
+        /*display: none;*/
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /* Remove borders */
+        outline: none; /* Remove outline */; 
+        color: #5e548e; /* Text color */
+        background-color: rgba(242,245,247,255);
+        cursor: pointer; /* Add a mouse pointer on hover */
+        padding: 15px; /* Some padding */
+        border-radius: 10px; /* Rounded corners */
+        font-size: 18px; /* Increase font size */
+        border-radius: 200px;
+      }
+      
+      #myBtn:hover {
+        color: #555; /* Add a dark-grey background on hover */
+        background-color: gainsboro;
+      }
 
 /* Nav bar*/
 .navbar {
@@ -70,11 +118,11 @@ ul a:hover{
       height: 1.5px;
       background: #000000;
       transform: scaleX(0);
-      transition: transform .3s;
+      transition-duration: 0.2s; /* Animation */
   }
   li > a:hover:after{
       transform: scaleX(1);
-      transition: transform .3s;
+      transition-duration: 0.2s; /* Animation */
   }
   .active{
       color: #000000 !important;
@@ -84,13 +132,10 @@ ul a:hover{
 
     /*Corousel*/
 
-    .carousel-item{
-        height: 32rem;
-        position: relative;
-    }
-
     .carousel-inner{
         height: 900px;
+        padding-left: 10%;
+        padding-right: 10%;
     
     }
 
@@ -105,20 +150,16 @@ ul a:hover{
         
     }
     */
-    .carousel-indicators li {
-        width: 10px;
-        height: 10px;
-        border-radius: 100%;
-        color: #000000;
-    }
+
 
     .carousel1Left{
         position: relative;
+        padding-top: 20%;
+        padding-right: 20%;
         font-size: 65px;
         color:rgba(0, 0, 0, 0.782);
         font-family: 'Roboto', sans-serif;
-        top: 350px;
-        padding-right: 50%;
+        
     }
     
     .carousel1Right{
@@ -127,12 +168,12 @@ ul a:hover{
 
     .carousel2Left{
         position: relative;
+        padding-left:10% ;
         font-family: 'Roboto', sans-serif;
         top: 350px;
         color:rgba(0, 0, 0, 0.782);
     }
-
-
+    
 /*Background*/
 
     .skills{
@@ -142,16 +183,48 @@ ul a:hover{
 
 /*Education*/
 .container-educ{
-    margin: 10%;
+    padding: 10%;
     background-color: rgba(242,245,247,255);
 }
-/*Imagenes*/
-.Vabefoto{
-    
-    width: 65%;
-    border-radius: 10%;
-    position: relative;
-    margin-top: 80px;
+
+.universidades{
+    padding-top: 20px;
 }
 
 /* Footer*/
+
+.social{
+    font-size: 50px;
+    font-family: 'Varela Round', sans-serif;
+    
+}
+
+.brands{
+    padding: 1%;
+}
+.fa-brands{
+    padding: 20px;
+    font-size: 60px;
+    color: #fff;
+    transform: scale(0.8);
+}
+
+.fa-brands:hover{
+ 
+    transition-duration: 0.2s; /* Animation */
+    transform: rotate(25deg);   
+    cursor: pointer;
+    
+}
+
+.V{
+    font-size: 40px;
+    font-weight: 300;
+    
+}
+
+.Valentina{
+    font-family: 'Varela Round', sans-serif;
+    padding-top: 20px;
+
+}
