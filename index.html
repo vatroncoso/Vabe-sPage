@@ -26,8 +26,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src="./myScript.js"></script>
+   
 
     <title>Valentina Troncoso G. </title>
 </head>
@@ -39,9 +38,9 @@
             <!--Here comes the navbar-->
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid" >
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <!--<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                  </button>
+                  </button>-->
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item ">
@@ -135,7 +134,7 @@
             </div>
             <div class="col-lg-4 skills">
                 <h4>- skills</h4>
-                <ul>
+                <ul style="padding-left: 0px;">
                     <li>Talented </li>
                     <li>Brilliant</li>
                     <li>Incredible</li>
@@ -148,12 +147,12 @@
             
             <!--Roll to top-->
 
-            <div><button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-sharp fa-solid fa-arrow-up-long"></i></button>
-             </section></div>
+            <div><button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+            </div>
 
 
         </div>
-
+    </section>
         
     
     <!--Education-->
@@ -188,56 +187,58 @@
 
     <!--Contact me-->
     <section id="contact">
-        <div class="row me">
+        <div class="row me">   
             <div class="col-lg-6 ">
-                <div class="wrapper img" style="background-image:url(images/ximg.jpg.pagespeed.ic.y-LWuYha7u.webp)">
-                    <div class="row">
-                        
-                            <div class="contact-wrap w-100 p-md-5 p-4">
-                                <h3 class="mb-4">Get in touch with us</h3>
-                                <div id="form-message-warning" class="mb-4"></div>
-                                <div id="form-message-success" class="mb-4">
-                                Your message was sent, thank you!
+                <form id="form">
+                    <div class="wrapper img" style="background-image:url(images/ximg.jpg.pagespeed.ic.y-LWuYha7u.webp)">
+                        <div class="row me">
+                            
+                                <div class="contact-wrap">
+                                    <h3 class="mb-4 lets">-LETS TALK</h3>
+                                    <div id="form-message-warning" class="mb-4"></div>
+                                    <div id="form-message-success" class="mb-4">
+                                    
                                 </div>
 
-                                <form method="POST" id="contactForm" name="contactForm" class="contactForm" novalidate="novalidate">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="label" for="name">Full Name</label>
-                                            <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                                    <form method="POST" id="contactForm" name="contactForm" class="contactForm" novalidate="novalidate">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group first">
+                                            
+                                                <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                            
+                                                <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                
+                                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="submit" value="Send Message" class="btn btn-secondary btn-round">
+                                                <div class="submitting"></div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="label" for="email">Email Address</label>
-                                            <input type="email" class="form-control" name="email" id="email" placeholder="Email">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label class="label" for="subject">Subject</label>
-                                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label class="label" for="#">Message</label>
-                                            <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <input type="submit" value="Send Message" class="btn btn-secondary btn-round">
-                                            <div class="submitting"></div>
-                                        </div>
-                                    </div>
+                                    </form>
                                 </div>
-                                </form>
-                            </div>
-                        
+                            
+                        </div>
                     </div>
-                </div>
+                </form>
+                    
             </div>
             <div class="col-lg-6">
                 <img  class="Tipofoto" src="Images/tipo.jpeg" alt="Valentina-Troncoso">
@@ -247,8 +248,8 @@
 
     <!--Footer-->
     <footer id="footer">
-        <div class="row">
-            <div class="col-lg-6">
+        <div class="row ">
+            <div class="col-lg-6 foot-brand">
                 <div class="social">
                 Social.
                 </div>
@@ -260,8 +261,6 @@
             </div>
 
             <div class="col-lg-6 Valentina">
-                
-                <div> Website design, animation and code by</div>
                 <div class="V">Valentina T.</div>
             </div>
         </div>
@@ -273,6 +272,6 @@
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    
+    <script src="./myScript.js"></script>
 </body>
 </html>

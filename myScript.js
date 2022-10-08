@@ -19,9 +19,9 @@
 
 	function scrollFunction() {
 	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-		mybutton.style.display = "block";
+		mybutton.styles.display = "block";
 	} else {
-		mybutton.style.display = "none";
+		mybutton.styles.display = "none";
 	}
 	}
 
@@ -43,3 +43,15 @@ $(window).scroll(function(e){
 	  $el.css({'position': 'static', 'top': '0px'}); 
 	} 
   });*/
+
+/*Contact form
+  const $form = document.querySelector('#form')
+
+  $form.addEventListener('submit', handleSubmit)
+
+  function handleSubmit(event){
+	event.preventDefault()
+	const form = new FormData(this)
+	console.log(form.get('name'))
+  }
+  */
