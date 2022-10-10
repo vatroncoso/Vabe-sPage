@@ -21,7 +21,7 @@
 
 #footer{
     text-align: center;
-    background-color: #5e548e;
+    background-color: #8974FB;
     color: #fff;
     padding: 4% 13%;
 }
@@ -29,7 +29,14 @@
 #education{
     background-color: rgba(242,245,247,255);
     padding:10% 13%;
+    
 
+}
+
+#knowledge{
+    background-color: #8974FB;
+    color: whitesmoke;
+    padding: 10% 13%;
 }
 
 #contact{
@@ -50,13 +57,15 @@ h3{
 
 h4{
     text-transform: uppercase;
-    color: #5e548e;
+    
 }
 
 ul {
     list-style-type: none;
     padding-left: 0px;
 }
+
+
 
 /*Images*/
 .Vabefoto{
@@ -185,11 +194,12 @@ li > a:hover:after{
 }
 
 .carousel2Left{
+   
     position: relative;
-    margin-left: 50px;
-    padding-right: 20%;
+    padding-top: 30%;
+    padding-left: 200px ;
+    padding-right: 400px;
     font-family: 'Roboto', sans-serif;
-    top: 350px;
     color:rgba(0, 0, 0, 0.782);
 }
     
@@ -209,6 +219,11 @@ li > a:hover:after{
     text-align:left;
 }
 
+/*University work*/
+.universitywork{
+    padding-top: 10%;
+}
+
 /* Footer*/
 
 .social{
@@ -224,11 +239,13 @@ li > a:hover:after{
 
 .foot-brand{
     text-align:left;
+    
 
 }
 
+
 .fa-brands{
-    padding: 20px;
+    padding-right: 20px;
     font-size: 60px;
     color: #fff;
     transform: scale(0.8);
@@ -244,14 +261,13 @@ li > a:hover:after{
 
 .Valentina{
     padding-bottom:4%;
-    padding-top:4%;
-}
-
-.V{
-    font-size: 35px;
-    font-weight: 500;
+    letter-spacing: 2px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 40px;
+    text-align: right;
     
 }
+
 
 
 /*Contact me*/
@@ -278,6 +294,10 @@ li > a:hover:after{
 }
 
 /*Floating menu*/
+
+#menu{
+    display: none;
+}
 .container2 {
     width: 20%;
     display: flex;
@@ -288,12 +308,9 @@ li > a:hover:after{
   
 #toggle2 {
     -webkit-appearance: none;
+
 }
 
-#toggle2:hover{
-    cursor: pointer; 
-    transform: rotate(90deg);
-}
 .button2 {
     position: fixed;
     z-index: 999;
@@ -312,28 +329,12 @@ li > a:hover:after{
     z-index: 99; 
     cursor: pointer; 
     padding: 15px;
+    color: whitesmoke;
 }
 
-.button2:before {
-    position: fixed;
-    content: "";
-    width: 20px;
-    height: 2px;
-    background: #fff;
-    transform: rotate(90deg);
-    transition: all 0.4s ease;
+.fa-regular.fa-bars{
+    color: whitesmoke;
 }
-
-.button2:after {
-    position: fixed;
-    content: "";
-    width: 20px;
-    height: 2px;
-    background: #fff;
-    transition: all 0.4s ease;
-    }
-  
-  
 .nav2 {
 position: fixed;
 opacity: 0;
@@ -385,7 +386,42 @@ z-index: 90;
 }
   
 @media (max-width: 640px) {
-    .container {
-        width: 100%;
-    }
+
+
+.container {
+    width: 100%;
+}
+/*Footer*/
+.foot-brand{
+    text-align: center;
+}
+
+.brands{
+    text-align: center;
+}
+
+.Valentina{
+    padding-top: 40px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.social{
+    padding-left: 0;
+}
+}
+/*Carousel*/
+.container-pre{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+@media (max-width: 420px){
+#menu{
+    display: block;
+}
+
+.skills{
+    padding-top: 30px;
+}
 }

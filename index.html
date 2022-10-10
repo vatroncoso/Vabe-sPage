@@ -30,17 +30,15 @@
 
     <title>Valentina Troncoso G. </title>
 </head>
+
 <body>
     
-
+    <!--Nav-bar-->
     <section id="title">
         
             <!--Here comes the navbar-->
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid" >
-                  <!--<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>-->
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item ">
@@ -64,7 +62,7 @@
     <!--Floating menu-->
     <div class="container2">
         <input type="checkbox" id="toggle2"/>
-        <label class="button2" for="toggle2"></label>
+        <label class="button2" id="menu" for="toggle2"><i class="fa-solid fa-bars"></i> </label>
         <nav class="nav2">
           <ul class="ul2">
             <a class="a2" href="#background">About me</a>
@@ -98,7 +96,7 @@
                 <div class="carousel-item">
                     <div class="container-pre">
                         <div class="row">
-                            <div class="col-lg-12 carousel2Left">
+                            <div class="carousel2Left">
                                 <h1>Please give a job :)</h1>
                                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
                                 Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, 
@@ -126,18 +124,21 @@
     <!--Background-->
     <section id="background">
         <div class="row">
-            <div class="col-lg-8 myback">
+            <div class="col-lg-9 col-md-12 myback">
                 <h4>- My background</h4>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+                    I am a telecommunications engineer recently graduated, 
+                    so I am looking to grow and learn in the area of ​​web development. 
+                    Throughout my years of university studies I learned to program under
+                     different contexts, which makes me a very versatile element.
                 </p>
             </div>
-            <div class="col-lg-4 skills">
+            <div class="col-lg-3 col-md-12 skills">
                 <h4>- skills</h4>
                 <ul style="padding-left: 0px;">
-                    <li>Talented </li>
-                    <li>Brilliant</li>
-                    <li>Incredible</li>
+                    <li>Creative </li>
+                    <li>High sense of responsibility</li>
+                    <li>Organization capacity</li>
                     <li> Amazing</li>
                     <li>Showstopping</li>
                     
@@ -145,16 +146,15 @@
             </div>
            
             
-            <!--Roll to top-->
+    <!--Roll to top-->
 
-            <div><button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
-            </div>
+    <div><button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+    </div>
 
 
         </div>
     </section>
         
-    
     <!--Education-->
     <section id="education">
         <div class="container-educ">
@@ -168,21 +168,54 @@
                     <div class="row">
                         <div class="col-lg-12 universidades">
                             <h5>
-                                Colegio de programadores internacional 
+                                Universidad de Concepción
                             </h5>
-                            <p>Cosa de la cosa en no sé que cosa/2089 - 2078</p>
+                            <p>Bachelor of science engineering</p>
                         </div>
                         <div class="col-lg-12 universidades">
-                            <h5> Colegio de la plataforma espacial </h5>
-                            <p> Estuve muchos aca haciendo cosas </p>
+                            <h5> Universidad de Concepción </h5>
+                            <p> Telecommunications engineering. </p>
                         </div>
                     <div>
                             
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="row universitywork">
+                <div class="col-lg-6">
+                    <h4>- University Work</h4>
+                </div>
+                <div class="col-lg-6">
+                    <h5> Mentor and speaker in WoomUp project</h5>
+                    <p>I helped different girls between 14 and 18 years old to solve
+                        doubts regarding careers in the STEAM area,
+                        through different meeting sessions.
+                        I was one of the five exhibitors selected in the country to present my career to the different
+                        mentors and students.</p>
+                    <h5>Tutor in program
+                        "Connected I learn"</h5>
+                    <p>I participated in this program aimed at teaching specific subjects to students who
+                        were educationally disadvantaged due to
+                        pandemic. In particular, I took math classes at
+                        student Belén Jara from the commune of San
+                        Francisco.</p>
+                </div>
+                
             </div>    
         </div>
+    </section>
+
+    <!--Knowledge-->
+    <section id="knowledge">
+        <div class="container-know">
+            <h4>-knowledge</h4>
+        </div>
+    </section>
+
+    <!--Proyects-->
+    <section id="proyects">
+
     </section>
 
     <!--Contact me-->
@@ -249,7 +282,7 @@
     <!--Footer-->
     <footer id="footer">
         <div class="row ">
-            <div class="col-lg-6 foot-brand">
+            <div class="col-lg-6 col-md-6 foot-brand" style="padding-left: 0px;">
                 <div class="social">
                 Social.
                 </div>
@@ -260,8 +293,8 @@
                 
             </div>
 
-            <div class="col-lg-6 Valentina">
-                <div class="V">Valentina T.</div>
+            <div class="col-lg-6 col-md-6 Valentina">
+                <div>Valentina T.</div>
             </div>
         </div>
 
